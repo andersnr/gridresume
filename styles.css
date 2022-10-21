@@ -1,0 +1,117 @@
+
+/* GENERAL */
+
+body {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1em;
+	background-image: url("images/background.jpg");
+	background-color: #cccccc;
+	margin-top: 50px;
+}
+
+/*start grid*/
+main {
+	display: grid;
+	grid-template-columns: .6fr 1fr;
+  grid-template-rows: [start-about] .5fr [start-sectionheaders].1fr [start-skills] 1fr [start-sectionheaders] .1fr 1fr; 
+  grid-template-areas: 
+  	"nest aboutme"
+  	"skillsheader occheader"
+  	"skills occ"
+  	"eduheader acaheader"
+  	"education academics"
+}
+
+#photo img {width: 100%;
+	margin-left: 1em;}
+
+ header { grid-area: nest;
+            	display: grid;
+            	grid-template-columns: 1fr 1fr;
+            	grid-template-rows: 1fr;
+            	grid-template-areas: "contactinfo photo";
+            	padding:  9px;
+            }
+
+
+
+ #photo { grid-area: photo;}
+ #name{ grid-area: name;}
+ #contactinfo { grid-area: contactinfo;}
+ #aboutme {grid-area: aboutme;}
+ #education {grid-area: education;}
+ #occsection {grid-area: occ;}
+ #academics {grid-area: academics;}
+ #skills {grid-area: skills;}
+
+ #eduheader {grid-area:  eduheader;}
+ #occheader {grid-area: occheader;}
+ #acaheader {grid-area: acaheader;}
+ #skillsheader {grid-area: skillsheader;}
+/*end grid*/ 
+
+
+p {
+	color: #2a2e36;
+}
+
+h1 {
+	font-family: 'Ultra', serif;
+	color: #4287f5;
+	font-size: 2em;
+	letter-spacing: 6px;
+	word-spacing: 10px;
+}
+
+
+h3 {
+	text-transform: uppercase;
+	color: #071633;
+}
+
+h4 {
+	font-weight: bolder;
+	color: #071633;
+}
+
+ul {
+  list-style-type: circle;
+  color: #2a2e36;
+}
+
+a:link {
+	text-decoration: none;
+	color: #ffffff;
+	}
+
+a:visited {
+	text-decoration: none;
+	color: #003996;
+	}
+
+a:hover, a:active {
+	text-decoration: none;
+	color: #0042ad;
+	}
+
+#aboutme {
+	margin-right: 5em;
+	margin-left: 2em;
+	margin-top: 2em;
+}
+
+#abtheader, #skillsheader, #occheader, #eduheader, #acaheader {
+background-color: #4287f5;
+border-radius: 20px;
+margin-right: 10px;
+}
+
+#skillsheader h3, #occheader h3, #eduheader h3, #acaheader h3 {
+	color: white;
+	margin-left: 10px;
+}
+
+#skills, #education, #occsection, #academics {
+	margin-right: 1em;
+	margin-left: 1em;
+}
